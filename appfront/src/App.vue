@@ -1,13 +1,21 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <VueAudio />
     <router-view/>
   </div>
 </template>
 
 <script>
+import VueAudio from './components/VueAudio'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    VueAudio
+  },
+  data () {
+    return {}
+  }
 }
 </script>
 
